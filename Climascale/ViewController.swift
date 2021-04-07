@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         print("boi")
         print("Last-Test-Orlando")
         print("adrian paasdfsa")
-        let antonIsAHoe = true
+        let antonIsAHoe = true;
         // Do any additional setup after loading the view.
     }
 
