@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         print("adrian")
         
         print("Anton a hoe")
+        
+        
+        print("testing 123")
         // Do any additional setup after loading the view.
     }
 
