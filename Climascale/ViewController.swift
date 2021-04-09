@@ -13,10 +13,9 @@ class ViewController: UIViewController {
     let shape = CAShapeLayer()
     //
 
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         
         //progress circle
