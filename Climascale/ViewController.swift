@@ -15,6 +15,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
         //progress circle
         let circlePath = UIBezierPath(arcCenter: CGPoint(x: 210, y: 350), radius: 150, startAngle: CGFloat(-M_PI_2), endAngle: CGFloat((M_PI * 2.0) - M_PI_2), clockwise: true)
         //interior
