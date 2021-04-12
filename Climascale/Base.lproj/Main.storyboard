@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="-64" y="-269"/>
         </scene>
-        <!--View Controller-->
+        <!--Mile Calculator View Controller-->
         <scene sceneID="xhZ-f5-DR8">
             <objects>
-                <viewController id="iz4-wy-nY4" sceneMemberID="viewController">
+                <viewController id="iz4-wy-nY4" customClass="MileCalculatorViewController" customModule="Climascale" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1h-n6-OWD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,6 +162,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="eBn-Vt-Fr3"/>
+                    <connections>
+                        <outlet property="transportPickerViewer" destination="cUr-Lo-z1n" id="62M-fL-hdy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xV0-h0-g48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="HEN-Le-rwQ" userLabel="Exit" sceneMemberID="exit"/>
@@ -204,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="-991" y="469"/>
         </scene>
-        <!--View Controller-->
+        <!--Leaderboard View Controller-->
         <scene sceneID="MSf-QI-jAM">
             <objects>
-                <viewController id="bXz-UV-VcU" sceneMemberID="viewController">
+                <viewController id="bXz-UV-VcU" customClass="LeaderboardViewController" customModule="Climascale" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gSJ-Ir-qg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,6 +218,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O6z-LS-C0r">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" id="7Ml-ay-Rf3">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Ml-ay-Rf3" id="1sj-cm-RWj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="65d-BP-OJY"/>
@@ -227,6 +240,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9c1-Wb-k2O"/>
+                    <connections>
+                        <outlet property="boardTableView" destination="O6z-LS-C0r" id="4RT-oA-IXO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6k-K8-cUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
