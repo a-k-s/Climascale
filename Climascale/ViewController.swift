@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     
     }
     
-    
     //progress circle animation if we want button
     //@objc func didTapButton() {
         //let animation = CABasicAnimation(keyPath: "strokeEnd")
