@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */; };
 		3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B472620EFAD00476EE1 /* Profile.swift */; };
+		3FEA3B6726278D2300476EE1 /* MileSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B6626278D2300476EE1 /* MileSliderViewController.swift */; };
 		B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66775052602C6FB008AE509 /* AppDelegate.swift */; };
 		B66775082602C6FB008AE509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66775072602C6FB008AE509 /* SceneDelegate.swift */; };
 		B667750A2602C6FB008AE509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66775092602C6FB008AE509 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		3FEA3B472620EFAD00476EE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3FEA3B6626278D2300476EE1 /* MileSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileSliderViewController.swift; sourceTree = "<group>"; };
 		B66775022602C6FB008AE509 /* Climascale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climascale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66775052602C6FB008AE509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66775072602C6FB008AE509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		B66774F92602C6FB008AE509 = {
 			isa = PBXGroup;
 			children = (
+				3FEA3B6626278D2300476EE1 /* MileSliderViewController.swift */,
 				3FEA3B472620EFAD00476EE1 /* Profile.swift */,
 				3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */,
 				B66775042602C6FB008AE509 /* Climascale */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEA3B6726278D2300476EE1 /* MileSliderViewController.swift in Sources */,
 				B667750A2602C6FB008AE509 /* ViewController.swift in Sources */,
 				3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */,
 				B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */,
