@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17715CF526276CF800BB549C /* progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715CF426276CF800BB549C /* progress.swift */; };
+		17715CFD26277B2700BB549C /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715CFC26277B2700BB549C /* calculatorViewController.swift */; };
 		3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */; };
 		3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B472620EFAD00476EE1 /* Profile.swift */; };
 		B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66775052602C6FB008AE509 /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17715CF426276CF800BB549C /* progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progress.swift; sourceTree = "<group>"; };
+		17715CFC26277B2700BB549C /* calculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; };
 		3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		3FEA3B472620EFAD00476EE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B66775022602C6FB008AE509 /* Climascale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climascale.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17715CF726277A9100BB549C /* storyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				B66775102602C6FC008AE509 /* LaunchScreen.storyboard */,
+				B667750B2602C6FB008AE509 /* Main.storyboard */,
+			);
+			path = storyBoards;
+			sourceTree = "<group>";
+		};
+		17715CF926277ABE00BB549C /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B66775092602C6FB008AE509 /* ViewController.swift */,
+				17715CFC26277B2700BB549C /* calculatorViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		17715CFB26277AEA00BB549C /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				17715CF426276CF800BB549C /* progress.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 		B66774F92602C6FB008AE509 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +92,12 @@
 		B66775042602C6FB008AE509 /* Climascale */ = {
 			isa = PBXGroup;
 			children = (
+				17715CFB26277AEA00BB549C /* custom */,
+				17715CF926277ABE00BB549C /* viewControllers */,
+				17715CF726277A9100BB549C /* storyBoards */,
 				B66775052602C6FB008AE509 /* AppDelegate.swift */,
 				B66775072602C6FB008AE509 /* SceneDelegate.swift */,
-				B66775092602C6FB008AE509 /* ViewController.swift */,
-				B667750B2602C6FB008AE509 /* Main.storyboard */,
 				B667750E2602C6FC008AE509 /* Assets.xcassets */,
-				B66775102602C6FC008AE509 /* LaunchScreen.storyboard */,
 				B66775132602C6FC008AE509 /* Info.plist */,
 			);
 			path = Climascale;
@@ -143,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17715CFD26277B2700BB549C /* calculatorViewController.swift in Sources */,
 				B667750A2602C6FB008AE509 /* ViewController.swift in Sources */,
 				3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */,
+				17715CF526276CF800BB549C /* progress.swift in Sources */,
 				B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */,
 				3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */,
 				B66775082602C6FB008AE509 /* SceneDelegate.swift in Sources */,
@@ -295,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7VJSSJUTD;
 				INFOPLIST_FILE = Climascale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7VJSSJUTD;
 				INFOPLIST_FILE = Climascale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
