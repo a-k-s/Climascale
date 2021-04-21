@@ -49,10 +49,10 @@ class progress: UIView {
 
 }
 
-public func animateIt() {
+public func animateIt(paramToValue: Double) {
     let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
     basicAnimation.fromValue = 1
-    basicAnimation.toValue = 0.5
+    basicAnimation.toValue = paramToValue
     basicAnimation.duration = 2
     basicAnimation.fillMode = .forwards
     basicAnimation.isRemovedOnCompletion = false

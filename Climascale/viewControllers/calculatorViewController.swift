@@ -60,6 +60,7 @@ class calculatorViewController: UIViewController, CLLocationManagerDelegate, MKM
     let vehicles = ["Car", "Truck" ]
     let vehicleNumbers = [315, 430.45]
     var myRow = 0
+    
     //
     
     override func viewDidLoad() {
@@ -151,13 +152,13 @@ class calculatorViewController: UIViewController, CLLocationManagerDelegate, MKM
             var miles = Double(milesTextField.text!)
             var finalVal = miles! * vehicleNumbers[0]
             updatedNumber.text = String(finalVal)
-            myTotalEmmissions = myTotalEmmissions + finalVal
+            myTotalEmissions = myTotalEmissions + finalVal
         }
         else if myRow == 1 {
             var miles = Double(milesTextField.text!)
             var finalVal = miles! * vehicleNumbers[1]
             updatedNumber.text = String(finalVal)
-            myTotalEmmissions = myTotalEmmissions + finalVal
+            myTotalEmissions = myTotalEmissions + finalVal
         }
         //gets rid of keyboard
         self.view.endEditing(true)
@@ -193,9 +194,6 @@ class calculatorViewController: UIViewController, CLLocationManagerDelegate, MKM
         }
         
         return expectedTimeInSeconds
-        
-        
-        
     }
     //
     
