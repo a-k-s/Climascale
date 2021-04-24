@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="860-Xp-nOl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qHR-A5-HbM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-bx-r5V">
-                                <rect key="frame" x="89" y="53" width="271" height="21"/>
+                                <rect key="frame" x="83" y="53" width="271" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -332,7 +332,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYQ-zv-nlT">
                                                 <rect key="frame" x="31" y="8" width="119" height="74"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Cancel"/>
+                                                <state key="normal" title="Back"/>
                                                 <connections>
                                                     <segue destination="S25-jV-fvN" kind="unwind" unwindAction="unwindFromManualCarbonUpdate:" id="JBQ-SG-CD3"/>
                                                 </connections>
@@ -792,6 +792,7 @@ with the following Data:
                                 <state key="normal" title="Confirm Update"/>
                                 <connections>
                                     <action selector="confirmUpdatePress:" destination="MtS-9K-6sU" eventType="touchUpInside" id="qFB-Et-S3e"/>
+                                    <segue destination="24F-8c-rm2" kind="unwind" unwindAction="unwindFromManualCarbonUpdate:" id="Urj-oq-KZr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-nL-3PW">
@@ -820,6 +821,7 @@ with the following Data:
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97k-Uu-VmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="24F-8c-rm2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1640.5797101449277" y="-1104.2410714285713"/>
         </scene>
@@ -980,15 +982,14 @@ with the following Data:
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TmC-58-8UH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="riI-nf-p0B">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pPm-hW-eMo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0o6-y5-qyC">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pPm-hW-eMo" id="cYd-tf-vVa">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0o6-y5-qyC" id="fZs-2v-UOs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -998,30 +999,21 @@ with the following Data:
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Mq-6g-Bw3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Mq-6g-Bw3" firstAttribute="bottom" secondItem="riI-nf-p0B" secondAttribute="bottom" id="8bG-oP-cpl"/>
+                            <constraint firstItem="riI-nf-p0B" firstAttribute="leading" secondItem="7Mq-6g-Bw3" secondAttribute="leading" id="MUt-4B-HVl"/>
+                            <constraint firstItem="riI-nf-p0B" firstAttribute="top" secondItem="7Mq-6g-Bw3" secondAttribute="top" id="clA-PG-2V6"/>
+                            <constraint firstItem="7Mq-6g-Bw3" firstAttribute="trailing" secondItem="riI-nf-p0B" secondAttribute="trailing" id="iTK-Zv-OpD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mXE-27-4sU"/>
                     <connections>
-                        <outlet property="tableView" destination="TmC-58-8UH" id="yuA-Tq-DmU"/>
+                        <outlet property="tableView" destination="riI-nf-p0B" id="mgF-pD-Xqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tQ-oo-nxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840.57971014492762" y="-269.19642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qdI-KR-4e5">
-            <objects>
-                <viewController id="860-Xp-nOl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pBI-0e-dOw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="CSW-kF-m4G"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fX0-LE-fNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1859" y="-269"/>
         </scene>
         <!--LeaderBoard-->
         <scene sceneID="nEx-Fs-Vq9">
@@ -1045,7 +1037,7 @@ with the following Data:
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsP-Qn-Htv">
-                                <rect key="frame" x="285" y="70" width="48" height="30"/>
+                                <rect key="frame" x="183" y="724" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
@@ -1074,7 +1066,7 @@ with the following Data:
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kob-D3-tMK">
-                                <rect key="frame" x="180" y="690" width="54" height="30"/>
+                                <rect key="frame" x="174" y="115" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
@@ -1082,7 +1074,7 @@ with the following Data:
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-QB-AoT">
-                                <rect key="frame" x="186" y="762" width="42" height="30"/>
+                                <rect key="frame" x="174" y="182" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>

@@ -32,7 +32,7 @@ class ViewController: UIViewController  {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        animateIt(paramToValue: 0.0)
+        
         
         
     
@@ -40,55 +40,67 @@ class ViewController: UIViewController  {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        self.ref.child(myFunctions.getUidValue()).child("firstname").getData { (error, snapshot) in
-                   if let error = error {
-                       print("Error getting data \(error)")
+        if Auth.auth().currentUser != nil {
+            //set first name
+            self.ref.child(myFunctions.getUidValue()).child("firstname").getData { (error, snapshot) in
+                       if let error = error {
+                           print("Error getting data \(error)")
+                       }
+                       else if snapshot.exists() {
+                           firstName = snapshot.value! as? String ?? ""
+                        DispatchQueue.main.async {
+                            self.nameLabel.text = firstName
+                        }
+                           
+                       }
+                       else {
+                           print("No data available")
+                       }
                    }
-                   else if snapshot.exists() {
-                       firstName = snapshot.value! as? String ?? ""
-                       
-                   }
-                   else {
-                       print("No data available")
-                   }
-               }
-               nameLabel.text = firstName
-               
-               
-               self.ref.child(myFunctions.getUidValue()).child("totalcarbonemissions").getData { (error, snapshot) in
-                   if let error = error {
-                       print("Error getting data \(error)")
-                   }
-                   else if snapshot.exists() {
-                       myTotalEmissions = snapshot.value! as? Double ?? 0.0
-                       
-                   }
-                   else {
-                       print("No data available")
-                   }
-               }
-               totalValue.text = String(myTotalEmissions) + " kg"
-              
-               self.ref.child(myFunctions.getUidValue()).child("weeklygoal").getData { (error, snapshot) in
-                   if let error = error {
-                       print("Error getting data \(error)")
-                   }
-                   else if snapshot.exists() {
-                       weeklyGoal = snapshot.value! as? Double ?? 0.0
-                       
-                   }
-                   else {
-                       print("No data available")
-                   }
-               }
-               weeklyGoalLabel.text = "Weekly goal of " + String(weeklyGoal) + " kg"
-               
-               var percent = myTotalEmissions / weeklyGoal
-               percent = Double(round(100*percent)/100)
-               publicToValue = percent
-               animateIt(paramToValue: publicToValue)
-      
+            
+            //set total
+            self.ref.child(myFunctions.getUidValue()).child("totalcarbonemissions").getData { (error, snapshot) in
+                if let error = error {
+                    print("Error getting data \(error)")
+                }
+                else if snapshot.exists() {
+                    myTotalEmissions = snapshot.value! as? Double ?? 0.0
+                 DispatchQueue.main.async {
+                     self.totalValue.text = String(myTotalEmissions) + " kg"
+                 }
+                    
+                }
+                else {
+                    print("No data available")
+                }
+            }
+            //set weekly and animate
+            self.ref.child(myFunctions.getUidValue()).child("weeklygoal").getData { (error, snapshot) in
+                if let error = error {
+                    print("Error getting data \(error)")
+                }
+                else if snapshot.exists() {
+                    weeklyGoal = snapshot.value! as? Double ?? 0.0
+                 DispatchQueue.main.async {
+                     self.weeklyGoalLabel.text = "Weekly goal of " + String(weeklyGoal) + " kg"
+                     var percent = myTotalEmissions / weeklyGoal
+                     percent = Double(round(100*percent)/100)
+                     publicToValue = percent
+                     animateIt(paramToValue: publicToValue)
+                 }
+                    
+                }
+                else {
+                    print("No data available")
+                }
+            }
+            
+        } else {
+            nameLabel.text = firstName
+            totalValue.text = String(myTotalEmissions) + " kg"
+            weeklyGoalLabel.text = "Weekly goal of " + String(weeklyGoal) + " kg"
+            
+        }
        
     
     }

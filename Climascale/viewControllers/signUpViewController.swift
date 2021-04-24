@@ -56,8 +56,13 @@ class signUpViewController: UIViewController {
                     //user war created successfully,now store the first and last name
                     let db = Firestore.firestore()
                     //add user to databse
-                    //self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "car": 0, "suv": 0, "sedanwagon": 0, "truck": 0, "trucksuv": 0, "van": 0, "pluginhybrid": 0, "batteryelectric": 0, "train": 0, "bus": 0])
-                    self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "weeklygoal": 0])
+                    self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "weeklygoal": 0, "checkwipe": 0])
+                    //set journey log first time
+                    self.ref.child(result!.user.uid).child("journeylogs").setValue(["firstlog": 0])
+                    //set day first time
+                    self.ref.child(result!.user.uid).child("daylogs").setValue(["firstday": "0"])
+                    //set date
+                    self.ref.child(result!.user.uid).child("datelogs").setValue(["firstdate": "0"])
                     db.collection("users").addDocument(data: ["firstname": firstName, "lastname": lastName, "uid": result!.user.uid]) { (error) in
                         
                         if error != nil {

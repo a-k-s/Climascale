@@ -5,6 +5,8 @@
 //  Created by Adrian Reilly on 4/17/21.
 //
 
+//
+
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
@@ -60,30 +62,62 @@ class confirmUpdatesViewController: UIViewController {
         mySum += batteryElectricOutputNumber
         mySum += trainOutputNumber
         mySum += busOutputNumber
-        journeyLogs.append(mySum)
         
         self.ref.child(myFunctions.getUidValue()).child("totalcarbonemissions").getData { (error, snapshot) in
             if let error = error {
-                print("error getting data")
+                print("error getting data + \(error)")
             }
             else if snapshot.exists() {
-                var currentTotal = snapshot.value! as? Double ?? 0.0
-                var newTotal = currentTotal + mySum
+                let currentTotal = snapshot.value! as? Double ?? 0.0
+                let newTotal = currentTotal + mySum
                 self.ref.child(self.myFunctions.getUidValue()).child("totalcarbonemissions").setValue(newTotal)
+                //set journey logs
+                let newRef = self.ref.child(self.myFunctions.getUidValue()).child("journeylogs").childByAutoId()
+                newRef.setValue(mySum)
+                //let key = newRef.key
+                //set day logs
+                let date = Date()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "EEEE"
+                let dayOfTheWeekString = dateFormatter.string(from: date)
+                let newRef2 = self.ref.child(self.myFunctions.getUidValue()).child("daylogs").childByAutoId()
+                newRef2.setValue(dayOfTheWeekString)
+                //set date logs
+                let newRef3 = self.ref.child(self.myFunctions.getUidValue()).child("datelogs").childByAutoId()
+                let fullDate = "\(date.get(.month))/\(date.get(.day))/\(date.get(.year))"
+                newRef3.setValue(fullDate)
+                
             }
             else {
                 print("no data available")
             }
         }
+        carOutputNumber = 0.0
+        suvOutputNumber = 0.0
+        sedanWagonOutputNumber = 0.0
+        truckOutputNumber = 0.0
+        truckSuvOutputNumber = 0.0
+        vanOutputNumber = 0.0
+        plugInHybridOutputNumber = 0.0
+        batteryElectricOutputNumber = 0.0
+        trainOutputNumber = 0.0
+        busOutputNumber = 0.0
         
         
     }
     
     
-    
-    
-    
-
-  
 
 }
+
+extension Date {
+    func get(_ components: Calendar.Component..., calendar: Calendar = Calendar.current) -> DateComponents {
+        return calendar.dateComponents(Set(components), from: self)
+    }
+
+    func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
+        return calendar.component(component, from: self)
+    }
+}
+
+

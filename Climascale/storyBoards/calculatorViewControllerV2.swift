@@ -248,6 +248,7 @@ class calculatorViewControllerV2: UIViewController, CLLocationManagerDelegate, M
         guard let response = response else {
             if let error = error {
                 print("Error \(error)")
+                //popup alert add
             }
             return
         }
