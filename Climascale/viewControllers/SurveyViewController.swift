@@ -6,9 +6,9 @@
 //
 
 import UIKit
-//import FirebaseFirestore
-//import FirebaseAuth
-//import Firebase
+import FirebaseFirestore
+import FirebaseAuth
+import Firebase
 
 public var weeklyGoal = 0.0
 
