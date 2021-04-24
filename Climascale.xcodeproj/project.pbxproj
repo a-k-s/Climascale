@@ -19,6 +19,8 @@
 		17B873DE262B691D00A5CC8B /* calculatorViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */; };
 		17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */; };
 		17B873E4262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873E3262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift */; };
+		3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF7692630CF2F00936043 /* AnimationViewController.swift */; };
+		3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF76C2630D11C00936043 /* HomeViewController.swift */; };
 		3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */; };
 		3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B472620EFAD00476EE1 /* Profile.swift */; };
 		49CBC0B2CDAF56F9F57260B8 /* Pods_Climascale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CBCFFF0250BDCA1AA79637 /* Pods_Climascale.framework */; };
@@ -44,6 +46,8 @@
 		17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = calculatorViewControllerV2.swift; path = Climascale/storyBoards/calculatorViewControllerV2.swift; sourceTree = SOURCE_ROOT; };
 		17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmUpdatesViewController.swift; sourceTree = "<group>"; };
 		17B873E3262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationConfirmUpdateViewController.swift; sourceTree = "<group>"; };
+		3FACF7692630CF2F00936043 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		3FACF76C2630D11C00936043 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		3FEA3B472620EFAD00476EE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A28FE71B1887243BA876BD7E /* Pods-Climascale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climascale.release.xcconfig"; path = "Target Support Files/Pods-Climascale/Pods-Climascale.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		B66774F92602C6FB008AE509 = {
 			isa = PBXGroup;
 			children = (
+				3FACF76C2630D11C00936043 /* HomeViewController.swift */,
+				3FACF7692630CF2F00936043 /* AnimationViewController.swift */,
 				3FEA3B472620EFAD00476EE1 /* Profile.swift */,
 				3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */,
 				B66775042602C6FB008AE509 /* Climascale */,
@@ -277,9 +283,11 @@
 				17715CFD26277B2700BB549C /* calculatorViewController.swift in Sources */,
 				1787812C262F673C00F8DAD1 /* FunctionsSuper.swift in Sources */,
 				1706149D262FA34900F99C01 /* SurveyViewController.swift in Sources */,
+				3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */,
 				17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */,
 				B667750A2602C6FB008AE509 /* ViewController.swift in Sources */,
 				174FA1DB262E41E200D6D6D5 /* signUpViewController.swift in Sources */,
+				3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */,
 				3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */,
 				170614A1262FB53B00F99C01 /* MyJourneyViewController.swift in Sources */,
 				174FA1D4262E41B700D6D6D5 /* profileViewController.swift in Sources */,
