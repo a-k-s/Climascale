@@ -26,8 +26,14 @@ class signUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
     }
+    
+    @IBAction func unwindToSignUp( _ seg: UIStoryboardSegue) {
+    }
+    
     
     @IBAction func signUpTapped(_ sender: Any) {
         //validate the fields
@@ -53,10 +59,14 @@ class signUpViewController: UIViewController {
                     self.showError("Error creating user")
                 }
                 else {
+                    if tookSurvey {
+                        self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "weeklygoal": startBaseLine, "checkwipe": 0, "surveycheck": 1])
+                    } else {
+                        self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "weeklygoal": 0, "checkwipe": 0, "surveycheck": 0])
+                    }
                     //user war created successfully,now store the first and last name
                     let db = Firestore.firestore()
                     //add user to databse
-                    self.ref.child(result!.user.uid).setValue(["firstname": firstName, "lastname": lastName, "totalcarbonemissions": 0, "weeklygoal": 0, "checkwipe": 0])
                     //set journey log first time
                     self.ref.child(result!.user.uid).child("journeylogs").setValue(["firstlog": 0])
                     //set day first time
@@ -64,9 +74,11 @@ class signUpViewController: UIViewController {
                     //set date
                     self.ref.child(result!.user.uid).child("datelogs").setValue(["firstdate": "0"])
                     db.collection("users").addDocument(data: ["firstname": firstName, "lastname": lastName, "uid": result!.user.uid]) { (error) in
+                        self.performSegue(withIdentifier: "segueSignUp", sender: nil)
                         
                         if error != nil {
                             //show error message
+                            self.performSegue(withIdentifier: "segueSignUp", sender: nil)
                             self.showError("User data couldn't be saved")
                         }
                     }

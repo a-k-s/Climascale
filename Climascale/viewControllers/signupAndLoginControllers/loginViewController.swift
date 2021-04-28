@@ -16,7 +16,12 @@ class loginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
+    }
+    
+    @IBAction func unwindToLogin( _ seg: UIStoryboardSegue) {
     }
     
     
@@ -33,11 +38,13 @@ class loginViewController: UIViewController {
             if error != nil {
                 //couldnt sign in
                 print("error")
+                self.performSegue(withIdentifier: "segueAnyway", sender: nil)
                 
             }
             else {
                 //login works
                 print("login success")
+                self.performSegue(withIdentifier: "segueAnyway", sender: nil)
             }
         }
     }

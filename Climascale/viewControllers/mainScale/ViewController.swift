@@ -15,6 +15,7 @@ import Firebase
 public var myTotalEmissions = 0.0
 public var publicToValue = 0.0
 public var firstName = ""
+public var weeklyGoal = 0.0
 
 
 class ViewController: UIViewController  {
@@ -28,12 +29,12 @@ class ViewController: UIViewController  {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var weeklyGoalLabel: UILabel!
     
+ 
+    
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
     
     }
@@ -41,6 +42,7 @@ class ViewController: UIViewController  {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if Auth.auth().currentUser != nil {
+            
             //set first name
             self.ref.child(myFunctions.getUidValue()).child("firstname").getData { (error, snapshot) in
                        if let error = error {
@@ -96,6 +98,10 @@ class ViewController: UIViewController  {
             }
             
         } else {
+            firstName = ""
+            myTotalEmissions = 0.0
+            weeklyGoal = 0.0
+            
             nameLabel.text = firstName
             totalValue.text = String(myTotalEmissions) + " kg"
             weeklyGoalLabel.text = "Weekly goal of " + String(weeklyGoal) + " kg"

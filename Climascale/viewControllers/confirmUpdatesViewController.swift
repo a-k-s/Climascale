@@ -32,6 +32,7 @@ class confirmUpdatesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.updateButton.isHidden = true
 
         
     }

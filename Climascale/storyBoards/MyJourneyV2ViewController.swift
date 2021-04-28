@@ -1,23 +1,19 @@
 //
-//  MyJourneyViewController.swift
+//  MyJourneyV2ViewController.swift
 //  Climascale
 //
-//  Created by Adrian Reilly on 4/20/21.
+//  Created by Adrian Reilly on 4/27/21.
 //
-
-
 
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 import Firebase
 
-//let n = 1234567.0123  let formatter = NumberFormatter() formatter.numberStyle = .decimal  if let s = formatter.string(from: NSNumber(value:n)) {      print ("Here's your number with commas: \(s)") }
 
-//public var journeyLogs = [Double]()
-
-class MyJourneyViewController: UIViewController {
+class MyJourneyV2ViewController: UIViewController {
     let myFunctions = FunctionsSuper()
+    
     
     var postData = [Double]()
     var dayLogsArray = [String]()
@@ -34,7 +30,6 @@ class MyJourneyViewController: UIViewController {
    
     
     @IBOutlet var tableView: UITableView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,27 +39,6 @@ class MyJourneyViewController: UIViewController {
         
         if Auth.auth().currentUser != nil {
             //checkwipe and get rid of 0 0 0 if need
-            self.ref2.child(self.myFunctions.getUidValue()).child("checkwipe").getData { (error, snapshot) in
-                if let error = error {
-                    print("Error getting data \(error)")
-                }
-                else if snapshot.exists() {
-                    let checkWipe = snapshot.value! as? Int ?? 3
-                    if self.postData.count > 0 && checkWipe == 0 {
-                        //first log wipe
-                        self.ref2.child(self.myFunctions.getUidValue()).child("journeylogs").child("firstlog").setValue(nil)
-                        //first day wipe
-                        self.ref2.child(self.myFunctions.getUidValue()).child("daylogs").child("firstday").setValue(nil)
-                        //first date wipe
-                        self.ref2.child(self.myFunctions.getUidValue()).child("datelogs").child("firstdate").setValue(nil)
-                        //change check wipe to 1
-                        self.ref2.child(self.myFunctions.getUidValue()).child("checkwipe").setValue(1)
-                    }
-                }
-                else {
-                    print("No data available")
-                }
-            }
             loggedInCheck = true
             ref = Database.database().reference()
             databaseHandle = ref?.child(myFunctions.getUidValue()).child("datelogs").observe(.childAdded, with: { (snapshot) in
@@ -112,24 +86,51 @@ class MyJourneyViewController: UIViewController {
         } else {
             loggedInCheck = false
         }
-        
-       
-
     }
     
-    //view did appear get new values
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+        self.ref2.child(self.myFunctions.getUidValue()).child("checkwipe").getData { (error, snapshot) in
+            if let error = error {
+                print("Error getting data \(error)")
+            }
+            else if snapshot.exists() {
+                let checkWipe = snapshot.value! as? Int ?? 3
+                if self.postData.count > 0 && checkWipe == 0 {
+                    print("still there")
+                    //first log wipe
+                    self.ref2.child(self.myFunctions.getUidValue()).child("journeylogs").child("firstlog").setValue(nil)
+                    //first day wipe
+                    self.ref2.child(self.myFunctions.getUidValue()).child("daylogs").child("firstday").setValue(nil)
+                    //first date wipe
+                    self.ref2.child(self.myFunctions.getUidValue()).child("datelogs").child("firstdate").setValue(nil)
+                    self.ref2.child(self.myFunctions.getUidValue()).child("checkwipe").setValue(1)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+            else {
+                print("No data available")
+            }
+        }
+        } else {
+            
+        }
+        
         
     }
-
+        
+    
+    
     
     
 
 
 }
 
-extension MyJourneyViewController: UITableViewDelegate, UITableViewDataSource {
+extension MyJourneyV2ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if loggedInCheck {
             return postData.count
@@ -140,7 +141,7 @@ extension MyJourneyViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2ID", for: indexPath)
         if loggedInCheck {
             cell.textLabel?.text = String(postData.reversed()[indexPath.row]) + " " + dayLogsArray.reversed()[indexPath.row ] + " " + dateLogsArray.reversed()[indexPath.row]
             return cell
@@ -156,4 +157,3 @@ extension MyJourneyViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
-

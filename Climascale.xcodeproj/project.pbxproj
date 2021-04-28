@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1706149D262FA34900F99C01 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706149C262FA34900F99C01 /* SurveyViewController.swift */; };
-		170614A1262FB53B00F99C01 /* MyJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170614A0262FB53B00F99C01 /* MyJourneyViewController.swift */; };
-		174FA1D4262E41B700D6D6D5 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FA1D3262E41B700D6D6D5 /* profileViewController.swift */; };
 		174FA1D8262E41D400D6D6D5 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FA1D7262E41D400D6D6D5 /* loginViewController.swift */; };
 		174FA1DB262E41E200D6D6D5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */; };
+		17567B2926389BA300CC4031 /* MyJourneyV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B2826389BA300CC4031 /* MyJourneyV2ViewController.swift */; };
+		17567B2E26389E1D00CC4031 /* profileV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B2D26389E1D00CC4031 /* profileV2ViewController.swift */; };
+		17567B352638A6F800CC4031 /* JourneySectionv2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B342638A6F800CC4031 /* JourneySectionv2ViewController.swift */; };
+		17567B3C2638F62800CC4031 /* ChooseVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B3B2638F62800CC4031 /* ChooseVehicleViewController.swift */; };
+		17567B412638F81F00CC4031 /* Confirm2LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B402638F81F00CC4031 /* Confirm2LocationViewController.swift */; };
+		1766D20A263797180086318F /* TitleandSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D209263797180086318F /* TitleandSurveyViewController.swift */; };
+		1766D20D263799A30086318F /* IntialSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D20C263799A30086318F /* IntialSurveyViewController.swift */; };
+		1766D21126379CB70086318F /* InitialSurvey2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D21026379CB70086318F /* InitialSurvey2ViewController.swift */; };
+		1766D2152637A0900086318F /* InitialSurvey3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D2142637A0900086318F /* InitialSurvey3ViewController.swift */; };
+		1766D21A2637A0A60086318F /* InitialSurvey4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D2192637A0A60086318F /* InitialSurvey4ViewController.swift */; };
+		1766D2232637AE2D0086318F /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D2222637AE2D0086318F /* AfterLoginViewController.swift */; };
+		1766D2282637B9970086318F /* AfterSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766D2272637B9970086318F /* AfterSignUpViewController.swift */; };
 		17715CF526276CF800BB549C /* progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715CF426276CF800BB549C /* progress.swift */; };
-		17715CFD26277B2700BB549C /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715CFC26277B2700BB549C /* calculatorViewController.swift */; };
 		1787812C262F673C00F8DAD1 /* FunctionsSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787812B262F673C00F8DAD1 /* FunctionsSuper.swift */; };
 		17A17D7E262E338D00FF94A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A17D7D262E338C00FF94A7 /* GoogleService-Info.plist */; };
 		17B873DE262B691D00A5CC8B /* calculatorViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */; };
 		17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */; };
-		17B873E4262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873E3262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift */; };
 		3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF7692630CF2F00936043 /* AnimationViewController.swift */; };
 		3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF76C2630D11C00936043 /* HomeViewController.swift */; };
-		3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */; };
 		3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B472620EFAD00476EE1 /* Profile.swift */; };
 		49CBC0B2CDAF56F9F57260B8 /* Pods_Climascale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CBCFFF0250BDCA1AA79637 /* Pods_Climascale.framework */; };
 		B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66775052602C6FB008AE509 /* AppDelegate.swift */; };
@@ -34,21 +40,27 @@
 
 /* Begin PBXFileReference section */
 		13CBCFFF0250BDCA1AA79637 /* Pods_Climascale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climascale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1706149C262FA34900F99C01 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
-		170614A0262FB53B00F99C01 /* MyJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyJourneyViewController.swift; path = Climascale/storyBoards/MyJourneyViewController.swift; sourceTree = SOURCE_ROOT; };
-		174FA1D3262E41B700D6D6D5 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		174FA1D7262E41D400D6D6D5 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		17567B2826389BA300CC4031 /* MyJourneyV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyJourneyV2ViewController.swift; path = Climascale/storyBoards/MyJourneyV2ViewController.swift; sourceTree = SOURCE_ROOT; };
+		17567B2D26389E1D00CC4031 /* profileV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileV2ViewController.swift; path = Climascale/storyBoards/profileV2ViewController.swift; sourceTree = SOURCE_ROOT; };
+		17567B342638A6F800CC4031 /* JourneySectionv2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneySectionv2ViewController.swift; sourceTree = "<group>"; };
+		17567B3B2638F62800CC4031 /* ChooseVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChooseVehicleViewController.swift; path = Climascale/storyBoards/ChooseVehicleViewController.swift; sourceTree = SOURCE_ROOT; };
+		17567B402638F81F00CC4031 /* Confirm2LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Confirm2LocationViewController.swift; path = Climascale/storyBoards/Confirm2LocationViewController.swift; sourceTree = SOURCE_ROOT; };
+		1766D209263797180086318F /* TitleandSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleandSurveyViewController.swift; path = Climascale/storyBoards/TitleandSurveyViewController.swift; sourceTree = SOURCE_ROOT; };
+		1766D20C263799A30086318F /* IntialSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntialSurveyViewController.swift; path = Climascale/viewControllers/survey/IntialSurveyViewController.swift; sourceTree = SOURCE_ROOT; };
+		1766D21026379CB70086318F /* InitialSurvey2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSurvey2ViewController.swift; sourceTree = "<group>"; };
+		1766D2142637A0900086318F /* InitialSurvey3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialSurvey3ViewController.swift; path = Climascale/storyBoards/InitialSurvey3ViewController.swift; sourceTree = SOURCE_ROOT; };
+		1766D2192637A0A60086318F /* InitialSurvey4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSurvey4ViewController.swift; sourceTree = "<group>"; };
+		1766D2222637AE2D0086318F /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AfterLoginViewController.swift; path = Climascale/storyBoards/AfterLoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		1766D2272637B9970086318F /* AfterSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AfterSignUpViewController.swift; path = Climascale/storyBoards/AfterSignUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		17715CF426276CF800BB549C /* progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progress.swift; sourceTree = "<group>"; };
-		17715CFC26277B2700BB549C /* calculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; };
 		1787812B262F673C00F8DAD1 /* FunctionsSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsSuper.swift; sourceTree = "<group>"; };
 		17A17D7D262E338C00FF94A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = calculatorViewControllerV2.swift; path = Climascale/storyBoards/calculatorViewControllerV2.swift; sourceTree = SOURCE_ROOT; };
 		17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmUpdatesViewController.swift; sourceTree = "<group>"; };
-		17B873E3262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationConfirmUpdateViewController.swift; sourceTree = "<group>"; };
 		3FACF7692630CF2F00936043 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		3FACF76C2630D11C00936043 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		3FEA3B472620EFAD00476EE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A28FE71B1887243BA876BD7E /* Pods-Climascale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climascale.release.xcconfig"; path = "Target Support Files/Pods-Climascale/Pods-Climascale.release.xcconfig"; sourceTree = "<group>"; };
 		B66775022602C6FB008AE509 /* Climascale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climascale.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +86,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17567B2C26389DEA00CC4031 /* mainScale */ = {
+			isa = PBXGroup;
+			children = (
+				B66775092602C6FB008AE509 /* ViewController.swift */,
+				17567B2D26389E1D00CC4031 /* profileV2ViewController.swift */,
+			);
+			path = mainScale;
+			sourceTree = "<group>";
+		};
+		17567B3A2638F60100CC4031 /* locationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17567B342638A6F800CC4031 /* JourneySectionv2ViewController.swift */,
+				17567B3B2638F62800CC4031 /* ChooseVehicleViewController.swift */,
+				17567B402638F81F00CC4031 /* Confirm2LocationViewController.swift */,
+			);
+			path = locationControllers;
+			sourceTree = "<group>";
+		};
+		1766D2132637A0360086318F /* survey */ = {
+			isa = PBXGroup;
+			children = (
+				1766D20C263799A30086318F /* IntialSurveyViewController.swift */,
+				1766D21026379CB70086318F /* InitialSurvey2ViewController.swift */,
+				1766D2142637A0900086318F /* InitialSurvey3ViewController.swift */,
+				1766D2192637A0A60086318F /* InitialSurvey4ViewController.swift */,
+			);
+			path = survey;
+			sourceTree = "<group>";
+		};
+		1766D2202637ADF90086318F /* signupAndLoginControllers */ = {
+			isa = PBXGroup;
+			children = (
+				174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */,
+				1766D2272637B9970086318F /* AfterSignUpViewController.swift */,
+				174FA1D7262E41D400D6D6D5 /* loginViewController.swift */,
+				1766D2222637AE2D0086318F /* AfterLoginViewController.swift */,
+			);
+			path = signupAndLoginControllers;
+			sourceTree = "<group>";
+		};
 		17715CF726277A9100BB549C /* storyBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,16 +139,14 @@
 		17715CF926277ABE00BB549C /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				170614A0262FB53B00F99C01 /* MyJourneyViewController.swift */,
+				1766D209263797180086318F /* TitleandSurveyViewController.swift */,
+				1766D2202637ADF90086318F /* signupAndLoginControllers */,
+				1766D2132637A0360086318F /* survey */,
+				17567B2C26389DEA00CC4031 /* mainScale */,
+				17567B2826389BA300CC4031 /* MyJourneyV2ViewController.swift */,
+				17567B3A2638F60100CC4031 /* locationControllers */,
 				17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */,
-				B66775092602C6FB008AE509 /* ViewController.swift */,
-				17715CFC26277B2700BB549C /* calculatorViewController.swift */,
 				17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */,
-				17B873E3262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift */,
-				174FA1D3262E41B700D6D6D5 /* profileViewController.swift */,
-				174FA1D7262E41D400D6D6D5 /* loginViewController.swift */,
-				174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */,
-				1706149C262FA34900F99C01 /* SurveyViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -132,7 +183,6 @@
 				3FACF76C2630D11C00936043 /* HomeViewController.swift */,
 				3FACF7692630CF2F00936043 /* AnimationViewController.swift */,
 				3FEA3B472620EFAD00476EE1 /* Profile.swift */,
-				3FEA3B3C2620DDBB00476EE1 /* LeaderboardViewController.swift */,
 				B66775042602C6FB008AE509 /* Climascale */,
 				B66775032602C6FB008AE509 /* Products */,
 				8B3361FBB718CA4F4218AFAA /* Pods */,
@@ -278,23 +328,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1766D2282637B9970086318F /* AfterSignUpViewController.swift in Sources */,
+				1766D21A2637A0A60086318F /* InitialSurvey4ViewController.swift in Sources */,
 				17B873DE262B691D00A5CC8B /* calculatorViewControllerV2.swift in Sources */,
-				17B873E4262E06AC00A5CC8B /* locationConfirmUpdateViewController.swift in Sources */,
-				17715CFD26277B2700BB549C /* calculatorViewController.swift in Sources */,
+				17567B2926389BA300CC4031 /* MyJourneyV2ViewController.swift in Sources */,
+				1766D2232637AE2D0086318F /* AfterLoginViewController.swift in Sources */,
 				1787812C262F673C00F8DAD1 /* FunctionsSuper.swift in Sources */,
-				1706149D262FA34900F99C01 /* SurveyViewController.swift in Sources */,
+				17567B412638F81F00CC4031 /* Confirm2LocationViewController.swift in Sources */,
+				1766D20A263797180086318F /* TitleandSurveyViewController.swift in Sources */,
 				3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */,
+				1766D21126379CB70086318F /* InitialSurvey2ViewController.swift in Sources */,
 				17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */,
 				B667750A2602C6FB008AE509 /* ViewController.swift in Sources */,
 				174FA1DB262E41E200D6D6D5 /* signUpViewController.swift in Sources */,
 				3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */,
 				3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */,
-				170614A1262FB53B00F99C01 /* MyJourneyViewController.swift in Sources */,
-				174FA1D4262E41B700D6D6D5 /* profileViewController.swift in Sources */,
 				17715CF526276CF800BB549C /* progress.swift in Sources */,
 				174FA1D8262E41D400D6D6D5 /* loginViewController.swift in Sources */,
 				B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */,
-				3FEA3B3D2620DDBB00476EE1 /* LeaderboardViewController.swift in Sources */,
+				17567B352638A6F800CC4031 /* JourneySectionv2ViewController.swift in Sources */,
+				1766D2152637A0900086318F /* InitialSurvey3ViewController.swift in Sources */,
+				17567B3C2638F62800CC4031 /* ChooseVehicleViewController.swift in Sources */,
+				1766D20D263799A30086318F /* IntialSurveyViewController.swift in Sources */,
+				17567B2E26389E1D00CC4031 /* profileV2ViewController.swift in Sources */,
 				B66775082602C6FB008AE509 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
