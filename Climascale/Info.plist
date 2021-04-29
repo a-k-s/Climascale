@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>need permission please</string>
+	<string>Allow location usage to calculate distances and better track your carbon emissions while driving.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>need permission please</string>
+	<string>Allow location usage to calculate distances and better track your carbon emissions while driving.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
