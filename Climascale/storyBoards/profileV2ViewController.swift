@@ -9,6 +9,14 @@ import UIKit
 import Firebase
 
 class profileV2ViewController: UIViewController {
+    var gradientLayer: CAGradientLayer = {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor(red: 0/255, green: 144/255, blue: 200/255, alpha: 1.0).cgColor, UIColor(red: 0/255, green: 170/255, blue: 170/255, alpha: 1.0).cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+        gradientLayer.frame = CGRect.zero
+       return gradientLayer
+    }()
     let myFunctions = FunctionsSuper()
     var ref = Database.database().reference()
     
@@ -20,6 +28,8 @@ class profileV2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        gradientLayer.frame = view.bounds
         if Auth.auth().currentUser != nil {
             statusLabel.text = "Currently Logged In"
             signUpandLoginButton.isHidden = true

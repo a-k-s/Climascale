@@ -7,6 +7,8 @@
 
 import UIKit
 
+public var baselineLabelNumber = ""
+
 class InitialSurvey3ViewController: UIViewController {
     
     @IBOutlet var dayPicker: UIPickerView!
@@ -57,6 +59,14 @@ class InitialSurvey3ViewController: UIViewController {
             numberOfDaysSurvey = 7
             weeklyEmissions = 7 * dailyEmissions
         }
+        //round the number
+        let rounded = Double(round(10*weeklyEmissions)/10)
+        //add commas
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedNumber = numberFormatter.string(from: NSNumber(value:rounded))
+        baselineLabelNumber = formattedNumber ?? "0"
+        
         startBaseLine = weeklyEmissions
         
     }

@@ -10,13 +10,13 @@ import MapKit
 import CoreLocation
 import FirebaseDatabase
 
-public var latitude = CLLocationDegrees()
-public var longitude = CLLocationDegrees()
-public var startLatitudeForParameter = CLLocationDegrees()
-public var startLongitudeForParameter = CLLocationDegrees()
+//public var latitude = CLLocationDegrees()
+//public var longitude = CLLocationDegrees()
+//public var startLatitudeForParameter = CLLocationDegrees()
+//public var startLongitudeForParameter = CLLocationDegrees()
 
-public var endLatitudeForParameter = CLLocationDegrees()
-public var endLongitudeForParameter = CLLocationDegrees()
+//public var endLatitudeForParameter = CLLocationDegrees()
+//public var endLongitudeForParameter = CLLocationDegrees()
 
 class JourneySectionv2ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     

@@ -64,6 +64,9 @@ class confirmUpdatesViewController: UIViewController {
         mySum += trainOutputNumber
         mySum += busOutputNumber
         
+        if Auth.auth().currentUser != nil {
+            
+        
         self.ref.child(myFunctions.getUidValue()).child("totalcarbonemissions").getData { (error, snapshot) in
             if let error = error {
                 print("error getting data + \(error)")
@@ -103,9 +106,13 @@ class confirmUpdatesViewController: UIViewController {
         batteryElectricOutputNumber = 0.0
         trainOutputNumber = 0.0
         busOutputNumber = 0.0
-        
+        }
+        else {
+            
+        }
         
     }
+        
     
     
 

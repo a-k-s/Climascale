@@ -143,7 +143,7 @@ extension MyJourneyV2ViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2ID", for: indexPath)
         if loggedInCheck {
-            cell.textLabel?.text = String(postData.reversed()[indexPath.row]) + " " + dayLogsArray.reversed()[indexPath.row ] + " " + dateLogsArray.reversed()[indexPath.row]
+            cell.textLabel?.text = String(postData.reversed()[indexPath.row]) + " kg added on " + dayLogsArray.reversed()[indexPath.row ] + " " + dateLogsArray.reversed()[indexPath.row]
             return cell
             
         } else {

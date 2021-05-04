@@ -31,6 +31,7 @@ class TitleandSurveyViewController: UIViewController {
             let vc = storyboard?.instantiateViewController(withIdentifier: "mainStart") as! UITabBarController
             vc.modalPresentationStyle = .fullScreen
                 DispatchQueue.main.async {
+                    vc.modalTransitionStyle = .flipHorizontal
                     self.present(vc, animated: true, completion: nil)
                 }
             
@@ -48,8 +49,8 @@ class TitleandSurveyViewController: UIViewController {
     
     
     @IBAction func loginButtonPress(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "loginViewControllerID") as! UIViewController
-        vc.modalPresentationStyle = .fullScreen
+        let vc = storyboard?.instantiateViewController(withIdentifier: "loginViewControllerID2") as! UINavigationController
+        //vc.modalPresentationStyle = .fullScreen
             DispatchQueue.main.async {
                 self.present(vc, animated: false, completion: nil)
             }

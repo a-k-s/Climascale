@@ -22,7 +22,7 @@ class InitialSurvey4ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        startBaselineLabel.text = "Baseline of " + String(startBaseLine) + " kg"
+        startBaselineLabel.text = "Baseline of " + String(baselineLabelNumber) + " kg"
         
 
     }
@@ -31,8 +31,7 @@ class InitialSurvey4ViewController: UIViewController {
     //offer sign up page
     @IBAction func signUpPressed(_ sender: Any) {
         tookSurvey = true
-        let vc = storyboard?.instantiateViewController(withIdentifier: "signUpID") as! UIViewController
-        vc.modalPresentationStyle = .fullScreen
+        let vc = storyboard?.instantiateViewController(withIdentifier: "loginViewControllerID2") as! UINavigationController
             DispatchQueue.main.async {
                 self.present(vc, animated: false, completion: nil)
             }

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1720B421263DB5EC00ACA94F /* roundButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720B420263DB5EC00ACA94F /* roundButton1.swift */; };
 		174FA1D8262E41D400D6D6D5 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FA1D7262E41D400D6D6D5 /* loginViewController.swift */; };
 		174FA1DB262E41E200D6D6D5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */; };
+		1755BDEB263E203100C2B106 /* doublev3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755BDEA263E203100C2B106 /* doublev3ViewController.swift */; };
+		1755BDEE263E22CA00C2B106 /* Autov3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755BDED263E22C900C2B106 /* Autov3ViewController.swift */; };
 		17567B2926389BA300CC4031 /* MyJourneyV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B2826389BA300CC4031 /* MyJourneyV2ViewController.swift */; };
 		17567B2E26389E1D00CC4031 /* profileV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B2D26389E1D00CC4031 /* profileV2ViewController.swift */; };
 		17567B352638A6F800CC4031 /* JourneySectionv2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17567B342638A6F800CC4031 /* JourneySectionv2ViewController.swift */; };
@@ -24,8 +27,11 @@
 		17715CF526276CF800BB549C /* progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715CF426276CF800BB549C /* progress.swift */; };
 		1787812C262F673C00F8DAD1 /* FunctionsSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787812B262F673C00F8DAD1 /* FunctionsSuper.swift */; };
 		17A17D7E262E338D00FF94A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A17D7D262E338C00FF94A7 /* GoogleService-Info.plist */; };
+		17AEA7E126406B4100E01549 /* mainViewV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AEA7E026406B4100E01549 /* mainViewV2ViewController.swift */; };
 		17B873DE262B691D00A5CC8B /* calculatorViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */; };
 		17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */; };
+		17CCAFBF2640BA0A005D2C3F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17CCAFBE2640BA0A005D2C3F /* Roboto-Regular.ttf */; };
+		17CCAFC22640BAF4005D2C3F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17CCAFC12640BAF4005D2C3F /* Montserrat-Regular.ttf */; };
 		3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF7692630CF2F00936043 /* AnimationViewController.swift */; };
 		3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACF76C2630D11C00936043 /* HomeViewController.swift */; };
 		3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA3B472620EFAD00476EE1 /* Profile.swift */; };
@@ -40,8 +46,11 @@
 
 /* Begin PBXFileReference section */
 		13CBCFFF0250BDCA1AA79637 /* Pods_Climascale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climascale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1720B420263DB5EC00ACA94F /* roundButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = roundButton1.swift; path = Climascale/viewControllers/mainScale/roundButton1.swift; sourceTree = SOURCE_ROOT; };
 		174FA1D7262E41D400D6D6D5 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		174FA1DA262E41E200D6D6D5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		1755BDEA263E203100C2B106 /* doublev3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = doublev3ViewController.swift; path = Climascale/storyBoards/doublev3ViewController.swift; sourceTree = SOURCE_ROOT; };
+		1755BDED263E22C900C2B106 /* Autov3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Autov3ViewController.swift; path = Climascale/storyBoards/Autov3ViewController.swift; sourceTree = SOURCE_ROOT; };
 		17567B2826389BA300CC4031 /* MyJourneyV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyJourneyV2ViewController.swift; path = Climascale/storyBoards/MyJourneyV2ViewController.swift; sourceTree = SOURCE_ROOT; };
 		17567B2D26389E1D00CC4031 /* profileV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileV2ViewController.swift; path = Climascale/storyBoards/profileV2ViewController.swift; sourceTree = SOURCE_ROOT; };
 		17567B342638A6F800CC4031 /* JourneySectionv2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneySectionv2ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +66,11 @@
 		17715CF426276CF800BB549C /* progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progress.swift; sourceTree = "<group>"; };
 		1787812B262F673C00F8DAD1 /* FunctionsSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsSuper.swift; sourceTree = "<group>"; };
 		17A17D7D262E338C00FF94A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17AEA7E026406B4100E01549 /* mainViewV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = mainViewV2ViewController.swift; path = Climascale/storyBoards/mainViewV2ViewController.swift; sourceTree = SOURCE_ROOT; };
 		17B873DD262B691D00A5CC8B /* calculatorViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = calculatorViewControllerV2.swift; path = Climascale/storyBoards/calculatorViewControllerV2.swift; sourceTree = SOURCE_ROOT; };
 		17B873E0262B863000A5CC8B /* confirmUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmUpdatesViewController.swift; sourceTree = "<group>"; };
+		17CCAFBE2640BA0A005D2C3F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		17CCAFC12640BAF4005D2C3F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		3FACF7692630CF2F00936043 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		3FACF76C2630D11C00936043 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3FEA3B472620EFAD00476EE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -154,10 +166,23 @@
 		17715CFB26277AEA00BB549C /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				17AEA7E026406B4100E01549 /* mainViewV2ViewController.swift */,
+				1755BDEA263E203100C2B106 /* doublev3ViewController.swift */,
+				1755BDED263E22C900C2B106 /* Autov3ViewController.swift */,
+				1720B420263DB5EC00ACA94F /* roundButton1.swift */,
 				17715CF426276CF800BB549C /* progress.swift */,
 				1787812B262F673C00F8DAD1 /* FunctionsSuper.swift */,
 			);
 			path = custom;
+			sourceTree = "<group>";
+		};
+		17CCAFBD2640B9AC005D2C3F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17CCAFBE2640BA0A005D2C3F /* Roboto-Regular.ttf */,
+				17CCAFC12640BAF4005D2C3F /* Montserrat-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		8B3361FBB718CA4F4218AFAA /* Pods */ = {
@@ -201,6 +226,7 @@
 		B66775042602C6FB008AE509 /* Climascale */ = {
 			isa = PBXGroup;
 			children = (
+				17CCAFBD2640B9AC005D2C3F /* fonts */,
 				17715CFB26277AEA00BB549C /* custom */,
 				17715CF926277ABE00BB549C /* viewControllers */,
 				17715CF726277A9100BB549C /* storyBoards */,
@@ -272,8 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CCAFC22640BAF4005D2C3F /* Montserrat-Regular.ttf in Resources */,
 				B66775122602C6FC008AE509 /* LaunchScreen.storyboard in Resources */,
 				17A17D7E262E338D00FF94A7 /* GoogleService-Info.plist in Resources */,
+				17CCAFBF2640BA0A005D2C3F /* Roboto-Regular.ttf in Resources */,
 				B667750F2602C6FC008AE509 /* Assets.xcassets in Resources */,
 				B667750D2602C6FB008AE509 /* Main.storyboard in Resources */,
 			);
@@ -331,20 +359,24 @@
 				1766D2282637B9970086318F /* AfterSignUpViewController.swift in Sources */,
 				1766D21A2637A0A60086318F /* InitialSurvey4ViewController.swift in Sources */,
 				17B873DE262B691D00A5CC8B /* calculatorViewControllerV2.swift in Sources */,
+				1755BDEE263E22CA00C2B106 /* Autov3ViewController.swift in Sources */,
 				17567B2926389BA300CC4031 /* MyJourneyV2ViewController.swift in Sources */,
 				1766D2232637AE2D0086318F /* AfterLoginViewController.swift in Sources */,
 				1787812C262F673C00F8DAD1 /* FunctionsSuper.swift in Sources */,
 				17567B412638F81F00CC4031 /* Confirm2LocationViewController.swift in Sources */,
 				1766D20A263797180086318F /* TitleandSurveyViewController.swift in Sources */,
+				1755BDEB263E203100C2B106 /* doublev3ViewController.swift in Sources */,
 				3FACF76D2630D11C00936043 /* HomeViewController.swift in Sources */,
 				1766D21126379CB70086318F /* InitialSurvey2ViewController.swift in Sources */,
 				17B873E1262B863000A5CC8B /* confirmUpdatesViewController.swift in Sources */,
 				B667750A2602C6FB008AE509 /* ViewController.swift in Sources */,
 				174FA1DB262E41E200D6D6D5 /* signUpViewController.swift in Sources */,
 				3FACF76A2630CF2F00936043 /* AnimationViewController.swift in Sources */,
+				17AEA7E126406B4100E01549 /* mainViewV2ViewController.swift in Sources */,
 				3FEA3B482620EFAD00476EE1 /* Profile.swift in Sources */,
 				17715CF526276CF800BB549C /* progress.swift in Sources */,
 				174FA1D8262E41D400D6D6D5 /* loginViewController.swift in Sources */,
+				1720B421263DB5EC00ACA94F /* roundButton1.swift in Sources */,
 				B66775062602C6FB008AE509 /* AppDelegate.swift in Sources */,
 				17567B352638A6F800CC4031 /* JourneySectionv2ViewController.swift in Sources */,
 				1766D2152637A0900086318F /* InitialSurvey3ViewController.swift in Sources */,

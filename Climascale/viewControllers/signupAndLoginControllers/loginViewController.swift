@@ -13,11 +13,14 @@ class loginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var errorLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.errorLabel.isHidden = true
 
     }
     
@@ -39,6 +42,7 @@ class loginViewController: UIViewController {
                 //couldnt sign in
                 print("error")
                 self.performSegue(withIdentifier: "segueAnyway", sender: nil)
+                self.errorLabel.isHidden = false
                 
             }
             else {

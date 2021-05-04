@@ -28,6 +28,7 @@ class signUpViewController: UIViewController {
         super.viewDidLoad()
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.errorLabel.isHidden = true
 
     }
     
@@ -41,6 +42,7 @@ class signUpViewController: UIViewController {
         if error != nil
         {
             print("error")
+            self.errorLabel.isHidden = false
         }
         else
         {
@@ -57,6 +59,7 @@ class signUpViewController: UIViewController {
                 if err != nil {
                     //there was an error creating the user
                     self.showError("Error creating user")
+                    self.errorLabel.isHidden = false
                 }
                 else {
                     if tookSurvey {
@@ -80,6 +83,7 @@ class signUpViewController: UIViewController {
                             //show error message
                             self.performSegue(withIdentifier: "segueSignUp", sender: nil)
                             self.showError("User data couldn't be saved")
+                            self.errorLabel.isHidden = false
                         }
                     }
                     
